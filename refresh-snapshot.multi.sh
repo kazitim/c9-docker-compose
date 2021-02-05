@@ -38,21 +38,6 @@ MOUNT_LOCATION=$(docker volume inspect --format '{{ .Mountpoint }}' c9dockercomp
 echo " -> Copying to: $MOUNT_LOCATION"
 sudo cp -r ./* $MOUNT_LOCATION
 
-MOUNT_LOCATION=$(docker volume inspect --format '{{ .Mountpoint }}' c9dockercompose_9c-miner4)
-
-echo " -> Copying to: $MOUNT_LOCATION"
-sudo cp -r ./* $MOUNT_LOCATION
-
-MOUNT_LOCATION=$(docker volume inspect --format '{{ .Mountpoint }}' c9dockercompose_9c-miner5)
-
-echo " -> Copying to: $MOUNT_LOCATION"
-sudo cp -r ./* $MOUNT_LOCATION
-
-MOUNT_LOCATION=$(docker volume inspect --format '{{ .Mountpoint }}' c9dockercompose_9c-miner6)
-
-echo " -> Copying to: $MOUNT_LOCATION"
-sudo cp -r ./* $MOUNT_LOCATION
-
 echo "->Refresh complete."
 
 echo "====================================================="
